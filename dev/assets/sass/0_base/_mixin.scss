@@ -1,0 +1,60 @@
+//============================================
+// clearfix
+//============================================
+@mixin clear {
+	*zoom: 1;
+	&:after{
+		display: block;
+		content: "";
+		clear: both;
+	}
+}
+
+@mixin mincho() {
+    font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3",
+        "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+}
+
+@mixin sp {
+    @media screen and (max-width: #{$breakpoint1}) {
+        @content;
+    }
+}
+
+@mixin min-w($breakpoint) {
+    @media screen and (min-width: #{$breakpoint}) {
+        @content;
+    }
+}
+
+@mixin max-w($breakpoint) {
+    @media screen and (max-width: #{$breakpoint}) {
+        @content;
+    }
+}
+
+@mixin pc {
+    @media screen and (min-width: #{$breakpoint1+1}) {
+        @content;
+    }
+}
+
+@mixin hover {
+    @include pc {
+        &:hover {
+            @content;
+        }
+    }
+}
+
+//============================================
+// breakpoint
+//============================================
+@mixin breakpoint($point) {
+	@if $point == tablets {
+		@media only screen and (max-width: 1024px) { @content ; }
+	}
+	@else if $point == sp {
+		@media only screen and (max-width: 767px) { @content ; }
+	}
+}

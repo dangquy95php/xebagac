@@ -1,0 +1,31 @@
+.heading-secondary{
+    font-size: 2.6rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: inline-block;
+    letter-spacing: 0.8rem;
+    cursor: pointer;
+
+    background-image: linear-gradient(to right, #75b0f9, #1c2ab1);
+    color: transparent;
+    -webkit-background-clip: text;// support for chrome... cococ
+    transition: all 0.2s;
+
+    &:hover{
+        transform: skewY(5deg) scale(1.1);
+        text-shadow: .5rem 1rem 2rem rgba(#000000, .2);
+    }
+}
+@keyframes coursesanimation{
+    0%{
+        opacity: 0;
+        transform: translate(0, -60px);
+    }
+    50%{
+        transform: translate(0, -20px);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0.0);
+    }
+}

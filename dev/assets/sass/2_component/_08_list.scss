@@ -1,0 +1,28 @@
+/*------------------------------------------------------------
+list
+------------------------------------------------------------*/
+
+/*
+------------------------------------------------------------*/
+.c-list1{
+	display: flex;
+
+    &__item {
+        text-transform: uppercase;
+        font-weight: 600;
+        padding: 15px 20px;
+        color: #ffffff;
+        border-right: 1px;
+        border-color: #858080;
+        border-style: solid;
+        transition: 0.3s ease-in-out;
+        cursor: pointer;
+        &:hover {
+            background-color: #e40e3a;
+            transition: 0.3s ease-in-out;
+        }
+        &:last-child {
+            border-right: none;
+        }
+    }
+}

@@ -1,0 +1,22 @@
+/* layout
+------------------------------------------------------------*/
+body {
+    width: 100%;
+    min-width: 1320px;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    @include sp {
+        min-width: 320px;
+    }
+}
+
+.l-container {
+    padding: 0 20px;
+    width: 1320px;
+    margin: 0 auto;
+
+    @include sp {
+        width: auto;
+    }
+}
