@@ -4,8 +4,19 @@ list
 
 /*
 ------------------------------------------------------------*/
-.c-list1{
+.c-list1 {
 	display: flex;
+    @include sp() {
+        // flex-wrap: wrap;
+        flex-direction: column;
+    }
+    &.is-show {
+        border: none;
+        @include sp() {
+            border-top: 1px solid #ccc;
+            padding-top: 10px;
+        }
+    }
 
     &__item {
         text-transform: uppercase;
@@ -16,13 +27,22 @@ list
         border-color: #858080;
         border-style: solid;
         transition: 0.3s ease-in-out;
+        font-size: 1.8rem;
+        @include sp() {
+            border-right: 0;
+            padding: 20px;
+        }
         cursor: pointer;
         &:hover {
-            background-color: #e40e3a;
+            background-color: #f65d11;
             transition: 0.3s ease-in-out;
+        }
+        &.is-active {
+            background-color: #f65d11;
         }
         &:last-child {
             border-right: none;
         }
     }
+    
 }
