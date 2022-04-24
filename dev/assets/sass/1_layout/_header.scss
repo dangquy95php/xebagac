@@ -22,6 +22,11 @@
             }
         }
     }
+    .l-container {
+        @include sp() {
+            padding: 0;
+        }
+    }
     &__link {
         margin-left: 20px;
         font-size: 2.0rem;

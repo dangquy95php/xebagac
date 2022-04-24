@@ -7,8 +7,14 @@ list
 .c-list1 {
 	display: flex;
     @include sp() {
-        // flex-wrap: wrap;
+        display: none;
+        position: fixed;
+        top: 69px;
+        width: 100%;
+        z-index: 999;
+        background-color: #2d61ab;
         flex-direction: column;
+        border-bottom: 5px solid #f65d11 !important;
     }
     &.is-show {
         border: none;
