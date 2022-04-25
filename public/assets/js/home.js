@@ -8,6 +8,8 @@ $(document).ready(function() {
             settings: {
               slidesToShow: 1,
               dots: true,
+              autoplay: true,
+              autoplaySpeed: 2000,
             }
       
           }, {
