@@ -3,12 +3,27 @@
 .c-header {
     background-color: #2d61ab;
     border-bottom: 5px solid #f65d11;
+    position: sticky;
+    z-index: 999;
+	top: 0;
+    &__logo {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: space-between;
+        img {
+            height: 100px;
+        }
+    }
     &__top {
         display: flex;
         color: #fff;
         align-items: center;
         padding: 20px;
         font-size: 1.8rem;
+        @include sp() {
+            padding: 0px 0px 0px 20px;
+        }
         i {
             font-size: 3.0rem;
             width: 30px;
@@ -28,14 +43,31 @@
         }
     }
     &__link {
-        margin-left: 20px;
+        margin-left: 5px;
         font-size: 2.0rem;
+        text-transform: uppercase;
+        font-weight: bold;
     }
     &__icon {
-        i {
+       i {
             &:nth-child(2) {
                 display: none;
             }
+       }
+        &.is-active {
+            i {
+                &:nth-child(1) {
+                    display: none;
+                }
+                &:nth-child(2) {
+                    display: block;
+                }
+            }
         }
     }
+    // &__logoText {
+    //     color: #e82c2c;
+    //     font-size: 2.1rem;
+    // }
+    line-height: 1.2;
 }

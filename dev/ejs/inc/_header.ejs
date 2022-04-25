@@ -8,12 +8,18 @@
 	<link rel="stylesheet" href="assets/css/style.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="shortcut icon" type="image/x-icon" href="/assets/img/logo1.png" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 	<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 	<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+	<link rel='stylesheet' href='https://cdn.rawgit.com/daneden/animate.css/v3.1.0/animate.min.css'>
+	<script src='https://cdn.rawgit.com/matthieua/WOW/1.0.1/dist/wow.min.js'></script>
+	<script>
+		new WOW().init();
+	</script>
 </head>
 <body>
 	<!--▼ Header ▼-->
@@ -24,23 +30,25 @@
 					<i class="fa-solid fa-align-justify"></i>
 					<i class="fa-solid fa-xmark"></i>
 				</div>
-				<a href="/" class="c-header__link">Xe tải - xe ba gác chở hàng Bình Dương</a>
+				<div class="c-header__logo">
+					<a href="/" class="c-header__link">
+						<p>Xe ba gác <span class="c-header__logoText">hạnh phát</span></p>
+					</a>
+					<img src="/assets/img/logo1.png">
+				</div>
 			</div>
 			<ul class="c-list1">
 				<li class="c-list1__item is-active">
-					<a href="#">Trang chủ</a>
+					<a href="#" class="home">Trang chủ</a>
 				</li>
 				<li class="c-list1__item">
-					<a href="#">Liên hệ</a>
+					<a href="#" class="contact">Liên hệ</a>
 				</li>
 				<li class="c-list1__item">
-					<a href="#">Tin tức</a>
+					<a href="#" class="store">Kho hình ảnh</a>
 				</li>
 				<li class="c-list1__item">
-					<a href="#">Kho hình ảnh</a>
-				</li>
-				<li class="c-list1__item">
-					<a href="#">Nhận xét của khách hàng</a>
+					<a href="#" class="review">Nhận xét của khách hàng</a>
 				</li>
 			</ul>
 		</div>

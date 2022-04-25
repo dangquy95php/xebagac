@@ -9,7 +9,7 @@ list
     @include sp() {
         display: none;
         position: fixed;
-        top: 69px;
+        top: 105px;
         width: 100%;
         z-index: 999;
         background-color: #2d61ab;
@@ -36,7 +36,7 @@ list
         font-size: 1.8rem;
         @include sp() {
             border-right: 0;
-            padding: 20px;
+            padding: 10px 20px;
         }
         cursor: pointer;
         &:hover {
@@ -50,5 +50,5 @@ list
             border-right: none;
         }
     }
-    
+  
 }
