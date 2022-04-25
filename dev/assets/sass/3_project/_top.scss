@@ -21,6 +21,10 @@ Css of home page
 			width:100%;
 			display: flex;
 			flex-wrap: wrap;
+			margin-left: -20px;
+			@include sp() {
+				margin-left: 0;
+			}
 		}
 		.image{
 			// margin-left:1vw;
@@ -34,8 +38,19 @@ Css of home page
 			background-position: center;
 			cursor: pointer;
 			@include sp() {
+				padding-left: 0;
 				width: 100%;
 				height: 275px;
+			}
+		}
+		figure {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
 			}
 		}
 		.image:hover{

@@ -865,6 +865,13 @@ Css of home page
   display: -webkit-box;
   display: flex;
   flex-wrap: wrap;
+  margin-left: -20px;
+}
+
+@media screen and (max-width: 767px) {
+  .p-home3 .image-list {
+    margin-left: 0;
+  }
 }
 
 .p-home3 .image {
@@ -882,9 +889,24 @@ Css of home page
 
 @media screen and (max-width: 767px) {
   .p-home3 .image {
+    padding-left: 0;
     width: 100%;
     height: 275px;
   }
+}
+
+.p-home3 figure {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.p-home3 figure img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
 }
 
 .p-home3 .image:hover {
